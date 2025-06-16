@@ -1,8 +1,15 @@
-.container{
-    padding-left: 30%;
-    border: 1px solid;
-    border-radius:10px;
+*{
+    font-style: normal;
 }
 body{
-    background-color: beige;
+    display: flex;
+    justify-content: center;
+    background-color: bisque;
+    font-size: larger;
+
+
+}
+.main-header{
+    margin-bottom: 0;
+    color: green;
 }
