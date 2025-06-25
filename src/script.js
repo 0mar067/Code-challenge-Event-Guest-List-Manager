@@ -54,4 +54,18 @@ button.addEventListener(`click`, (event) => {
         list.removeChild(item)
     })
     item.appendChild(deleteButton)
+    const rsvpBtn = document.createElement("button");
+   rsvpBtn.textContent = "Not Attending";
+   rsvpBtn.addEventListener("click", function (){
+      if (rsvpBtn.textContent === "Not Attending") {
+        rsvpBtn.textContent = "Attending";
+        li.classList.add("attending");
+      } else {
+        rsvpBtn.textContent = "Not Attending";
+        li.classList.remove("attending");
+      }
+   });
+   item.appendChild(rsvpBtn);
 })
+//RSVP button
+  
